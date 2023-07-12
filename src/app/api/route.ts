@@ -1,12 +1,14 @@
 import { NextResponse } from "next/server";
+import hello from "./hello";
 
 export async function GET() {
   console.log("GET REQUEST");
   return NextResponse.json({
     type: "GET REQUEST",
-    data: { username: "@choubari_", url: "choubari.com" },
+    data: hello(),
   });
 }
+
 export async function POST() {
   console.log("POST REQUEST");
   return NextResponse.json({
