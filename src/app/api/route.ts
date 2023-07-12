@@ -5,7 +5,7 @@ export async function GET() {
   console.log("GET REQUEST");
   return NextResponse.json({
     type: "GET REQUEST",
-    data: hello(),
+    data: await hello(),
   });
 }
 
