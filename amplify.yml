@@ -3,6 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
+        - chmod 777 patch-next.sh
         - npm install
         - ./patch-next.sh
     build:
